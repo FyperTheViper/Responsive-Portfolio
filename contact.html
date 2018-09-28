@@ -10,42 +10,37 @@
 </head>
 <body>
 
-        <header>
-            <div class="hidden">
-                 <h1>Brett Byars</h1>
-                 <nav>
-                    <ul>
-                        <li class="linktext" id="about"><a href="index.html">About</a></li>
-                        <li class="linktext" id="portfolio"><a href="portfolio.html">Portfoilo</a></li>
-                        <li class="linktext" id="contact"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-
-        <div class="container">
-            <h2>Contact</h2>
-                <form action="process.php" method="POST">
-                    <div>
-                        <label for="personname"><p class="formText">Name</p></label>
-                        <input type="text" name="firstLastName" class="imputbox" placeholder="John Smith">
-                    </div>
-            
-                    <div>
-                        <label for="mail"><p class="formText">Email</p></label>
-                        <input type="text" name="email" class="imputbox" placeholder="you@exmaple.com">
-                    </div>
-
-                    <div>
-                        <label for="email"><p class="formText">Message</p></label>
-                        <textarea name="Message" id="messagetext" cols="127" rows="10"></textarea>
-                    </div>
-
-                </form>
-
-            <button class="btn-submit">Submit</button>
-            
+    <header>
+        <div class="hidden">
+             <h1>Brett Byars</h1>
+             <nav>
+                <a class="linktext" id="about" href="index.html">About</a>
+                <a class="linktext" id="portfolio" href="portfolio.html">Portfoilo</a>
+                <a class="linktext" id="contact" href="contact.html">Contact</a>
+             </nav>
         </div>
+    </header>
+
+    <section class="container">
+        <h2>Contact</h2>
+            <form action="process.php" method="POST">
+                <div>
+                    <label for="personname"><p class="formText">Name</p></label>
+                    <input type="text" name="firstLastName" class="imputbox" placeholder="John Smith">
+                </div>
+        
+                <div>
+                    <label for="mail"><p class="formText">Email</p></label>
+                    <input type="text" name="email" class="imputbox" placeholder="you@exmaple.com">
+                </div>
+
+                <div>
+                    <label for="email"><p class="formText">Message</p></label>
+                    <textarea name="Message" id="messagetext" cols="127" rows="10"></textarea>
+                </div>
+            </form>
+        <button class="btn-submit">Submit</button> 
+    </section>
        
     <footer>
         <p class="footertext">
