@@ -65,8 +65,6 @@ h1:before {
     transform: scaleY(1);
     -webkit-transform-origin: 50%;
     transform-origin: 50%;
-    -webkit-transition-property: transform;
-    transition-property: transform;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
@@ -162,6 +160,46 @@ h2 {
     float: left;
     margin-right: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#pancakes:hover {
+   
+}
+/* generated element for shine effect.
+ * normal state is semi-transparent
+ * white but with zero width. Set no
+ * transition here for no mouse-leave
+ * animations. Otherwise the effect
+ * will play in reverse when your mouse
+ * leaves the element
+ */
+#pancakes:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.4);
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+   
+}
+/* on hover we animate the width to
+ * 100% and opacity to 0 so the element
+ * grows and fades out
+ */
+#pancakes:hover:after {
+    width: 120%;
+    background-color: rgba(255,255,255,0);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .abouttext {
@@ -317,7 +355,7 @@ footer {
 @media (max-width:980px) {
     .container {
         width: 100%;
-        max-width: 820px;
+        max-width: 800px;
     }
 
     #contact {
@@ -343,7 +381,9 @@ footer {
 @media (max-width:768px) {
     .container {
         width: 100%;
-        max-width: 680px;
+        max-width: 600px;
+        margin: 0 auto;
+        margin-bottom: 70px;
     }
 
     #contact {
@@ -402,12 +442,14 @@ footer {
     #pancakes {
         width: 100%;
         max-width: 450px;
+        margin-bottom: 30px;
     }
 
     .abouttext {
         text-align: center;
-        word-spacing: .3em;
+        word-spacing: 0.3em;
         line-height: 1.8em;
+        font-size: 0.9em;
     }
 
     .imputbox {
