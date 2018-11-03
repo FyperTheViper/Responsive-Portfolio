@@ -282,12 +282,16 @@ textarea {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 8px 22px 0 rgba(0, 0, 0, 0.22);
 }
 
+#train {
+    background-image: url(../images/choochoo.png);
+}
+
 #gif {
-    background-image: url(../images/beepboop.png)
+    background-image: url(../images/beepboop.png);
 }
 
 #trivia {
-    background-image: url(../images/miniearth.png)
+    background-image: url(../images/miniearth.png);
 }
 
 #deepsea {
