@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Brett Byars About Me</title>
+    <title>Brett Byars | Artist | Writer | Coder</title>
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Didact+Gothic|Fira+Sans+Condensed|Questrial" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Didact+Gothic|Fira+Sans+Condensed|Questrial" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Oswald|Slabo+27px|Vollkorn" rel="stylesheet">  
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -14,7 +15,7 @@
 
     <header id="header-top">
         <div id="sticky-nav-inner">
-            <img src="assets/images/brettb.png" id="brett-face" alt="Brett Profile Drawing">
+            <a href="#top-main" id="web-dev"><img src="assets/images/brettb.png" id="brett-face" alt="Brett Profile Drawing"></a>
             <h1>Brett Byars</h1>
             <div id="external-links">
                 <a href="https://www.linkedin.com/in/brett-byars-67806516a/" target="_blank">
@@ -25,51 +26,142 @@
                 </a>
             </div>
             <nav>
-                <a href="#blank" class="link-text" id="web-dev">Web Development</a>
-                <a href="#" class="link-text">Artwork</a>
-                <a href="#" class="link-text">Other Projects</a>
+                <a href="#web" class="link-text" id="web-dev">Web Portfolio</a>
+                <a href="#art" class="link-text">Artwork</a>
+                <a href="#book" class="link-text">Novel</a>
+                <a href="#me" class="link-text">About Me</a>
             </nav>
         </div>
     </header>
 
     <section id="top-main">
-        <img src="assets/images/ridge.jpg" class="hero-image" alt="">
+        <img src="assets/images/ridge.jpg" id="hero-image" alt="">
+            <p id="about-me">
+                Coding | Painting | Writing<br>
+                Full Stack Web Developer + Graphic Design<br>
+                b.w.byars@gmail.com </p>
     </section>
 
-    <div id="blank">
+    <div id="web">
 
     </div>
 
-    <a name="web-devlopment" id="web-projects">
-        <div id="web-banner">
+    <a name="webprojects" id="web-projects"></a>
+        <div class="banner">
             <h2>Github Projects</h2>
         </div>
         <section>
             <div id="projects-container">
+                <a href="https://agunforhire.github.io/ProjectOne/" target="_blank">
+                    <div class="projects" id="foodie">
+                        <span>Soux Vide Restaurant Review</span>
+                </div>
                 <a href="https://fypertheviper.github.io/TrainsOnTime/" target="_blank">
-                    <div class="paintings" id="train">
+                    <div class="projects" id="train">
                         <span>Train Scheduler</span>
                     </div>
-                </a>
                 <a href="https://fypertheviper.github.io/GifTastic/" target="_blank">
-                    <div class="paintings" id="gif">
+                    <div class="projects" id="gif">
                         <span>Giphy Gif Grabber</span>
                     </div>
-                </a>
                 <a href="https://fypertheviper.github.io/TriviaGame/" target="_blank">
-                    <div class="paintings" id="trivia">
+                    <div class="projects" id="trivia">
                         <span>Geography Trivia</span>
                     </div>
-                </a>
-    
                 <a href="https://fypertheviper.github.io/unit-4-game/" target="_blank">
-                    <div class="paintings" id="deepsea">
+                    <div class="projects" id="deepsea">
                         <span>Deep-Sea RPG Game</span>
-                    </div>
-                </a>
+                </div>
             </div>
         </section>
-    </a>
+
+    <div id="art">
+
+    </div>
+
+    <a name="artwork" id="art-work"> </a>
+            <div class="banner">
+                <h2>Oil Paintings</h2>
+            </div>
+            <section>
+                <div id="artwork-container">
+                        <a href="assets/images/marchingland.jpg" target="_blank">
+                            <div class="paintings" id="marchingland">
+                                <span>Marching Land</span>
+                            </div>
+                        </a>
+            
+                        <a href="assets/images/dalized.jpg" target="_blank">
+                            <div class="paintings" id="dalized">
+                                <span>Dalized Landscape</span>
+                            </div>
+                        </a>
+            
+                        <a href="assets/images/egret.jpg" target="_blank">
+                            <div class="paintings" id="egret">
+                                <span>Dawning Egret</span>
+                            </div>
+                        </a>
+            
+                        <a href="assets/images/sunflowers.jpg" target="_blank">
+                            <div class="paintings" id="sunflowers">
+                                <span>Sunflowers After Storm</span>
+                            </div>
+                        </a>
+            
+                        <a href="assets/images/montanasunset.png" target="_blank">
+                            <div class="paintings" id="montanasunset">
+                                <span>Big Sky Montana</span>
+                            </div>
+                        </a>
+                </div>
+            </section>
+
+    <div id="book">
+
+    </div>
+
+    <a name="otherwork" id="other-work"> </a>
+    <div class="banner">
+        <h2>Wall at the Tide</h2>
+    </div>
+        <section id="novel-container">
+            <div id="book-back">
+                <img src="assets/images/wallatthetide.png" id="kloom" alt="">
+                <div id="book-text">
+                    <h3>Wall at the Tide</h3><p>is sci-fi psychological thriller currently being written by Brett Byars</p>
+                    <p>Read an excerpt here!</p>
+                </div>
+            </div>
+        </section>
+
+    <div id="me">
+
+    </div>
+
+    <a name="contact" id="contact"> </a>
+    <div class="banner">
+        <h2>About me</h2>
+    </div>
+        <section id="me-section">
+            <div id="me-container">
+                <p id="backstory">  Brett was born in cataclysmic explosion which wiped out a vast, uninhabited wasteland, turning it into an even vaster wasteland. Upon learning the skill of walking, 
+                        Brett went on an international slapping spree, hitting only the most annoying people, which lasted a total of 77 days, and injured countless jerks. For his crimes, 
+                        Brett was the youngest person ever to be tried as an adult, at the age of 4 months. The trial however, brought no one justice and devolved into a circus of the most
+                        cious kind. <br>
+                            Having escaped punishment, Brett sought to better his life by redesigning socks so that the seams didn't rub underneath people's toenails. This venture earned him 
+                        billions and he graciously used most of this money to create the world's largest pouch of Capri Sun because, as he states: "You drink the normal one in about 5 seconds." 
+                        After satisfying the world's thirst, Brett has become an increasing rare public figure. Some claim to have seen him offering people pancakes of extraordinary quality, but 
+                        so far, these sightings have not been rooted in any solid evidence.</p>
+            </div>
+        </section>
+
+    <footer>
+        <p class="footertext">
+            Copyright &copy; 2018 𐐒WB. All Right Reserved.
+        </p>
+    </footer>
+    
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
