@@ -35,8 +35,8 @@ html {
     text-align: center;
     color: rgb(204, 204, 204);
     line-height: 1.5;
-    animation: move 2s;
-    -webkit-animation: move 2s;
+    animation: move 1.5s;
+    -webkit-animation: move 1.5s;
 }
 
 @keyframes move {
@@ -252,13 +252,16 @@ span {
     margin: auto;
     height: auto;
     max-width: 900px;
-    margin-top: 60px;
+    justify-content: center;
 }
 
 #backstory {
     display: flex;
-    justify-content: center;
     color: whitesmoke;
+    margin-top: 60px;
+    font-size: 1.2em;
+    font-family: 'Didact Gothic', sans-serif;
+    line-height: 1.3em;
 }
 
 
@@ -377,7 +380,7 @@ footer {
 
     #about-me {
         margin-top: 220px;
-        font-size: 5.5vw;
+        font-size: 6vw;
     }
 
     .projects, .paintings {
