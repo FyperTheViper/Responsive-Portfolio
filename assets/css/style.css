@@ -264,6 +264,10 @@ span {
     line-height: 1.3em;
 }
 
+#bamazon {
+    background-image: url(../images/bamazon.png);
+}
+
 #liri {
     background-image: url(../images/liriproject.png);
 }
