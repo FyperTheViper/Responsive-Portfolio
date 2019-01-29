@@ -29,11 +29,11 @@ html {
     border: 2px solid rgb(206, 206, 206);
     padding: 10px;
     left: 50%;                        
-    top: 25vw;                         
+    top: 20vw;                         
     transform: translate(-50%, -50%);
     font-size: 2.5vw;
     text-align: center;
-    color: rgb(204, 204, 204);
+    color: rgb(218, 218, 218);
     line-height: 1.5;
     animation: move 1.5s;
     -webkit-animation: move 1.5s;
@@ -65,29 +65,31 @@ html {
 
 a {
     text-decoration: none;
+    margin-bottom: 0px;
 }
 
 header {
     background-image: linear-gradient(rgb(209, 209, 209), rgb(247, 247, 247));
     width: 100%;
-    margin-bottom: 40px;
+    padding-top: 20px;
     border-top: 4px solid rgb(100, 100, 100);
-    height: 80px;
+    height: 60px;
     z-index: 9000;
     /*box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.22);*/
 }
 
-#sticky-nav-inner {
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 1100px;
+    font-size: .8em;
     margin: auto;
 }
 #brett-face {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     z-index: 1;
 }
 
@@ -102,29 +104,20 @@ h1 {
     color: black;
 }
 
-nav {
-    max-width: 500px;
-    margin-left: auto;
-    text-align: center;
-    padding-bottom: 25px;
+#lower-text {
+    font-size: .7em;
 }
 
 .link-text {
     padding: 20px 15px 25px 15px;
     font-family: 'Fira Sans Condensed', sans-serif;
-    color: #5e5e5e;
-    font-size: 1.1em;
+    color: #dee0fc;
     transition: all .2s ease-in-out;
 }
 
-.link-text:hover { 
-    text-transform: scale(1.1); 
-}
-
 .links {
-    width: 26px;
-    height: 26px;
-    padding-bottom: 25px;
+    width: 50px;
+    height: 50px;
     padding-left: 5px;
 }
 
@@ -142,12 +135,12 @@ h2 {
 }
 
 #web, #art, #book, #me {
-    height: 75px;
+    height: 40px;
 }
 
 .banner {
     height: 100px;
-    background: rgb(248, 248, 248); 
+    background: rgb(219, 218, 231); 
     width: 100%;
     text-align: center;
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 8px 30px 0 rgba(0, 0, 0, 0.22);
@@ -159,7 +152,7 @@ h2 {
     flex-flow: row wrap;
     justify-content: center;
     background-image: linear-gradient(to right, rgb(201, 201, 201), rgb(240, 240, 240), rgb(201, 201, 201));
-    max-width: 80%;
+    max-width: 75%;
     margin: auto;
     margin-top: 40px;
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.3), 0 8px 30px 0 rgba(0, 0, 0, 0.3);
@@ -167,22 +160,14 @@ h2 {
     padding: 30px 0 30px 0;
 }
 
-/*.bg-image-blur {
-    -webkit-filter: blur(20px);
-    -moz-filter: blur(20px);
-    -o-filter: blur(20px);
-    -ms-filter: blur(20px);
-    filter: blur(20px);
-} */
-
 .projects, .paintings {
     margin: 15px;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     background: black;
-    width: 430px;
-    height: 260px;
+    width: 380px;
+    height: 210px;
     color: white;
     font-family: 'Georgia', Times, Times New Roman, serif;
     font-size: 1em;
@@ -236,6 +221,12 @@ span {
     text-align: center;
 }
 
+#read-here {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+}
+
 #book-text, h3 {
     font-size: 1.7em;
 }
@@ -262,6 +253,14 @@ span {
     font-size: 1.2em;
     font-family: 'Didact Gothic', sans-serif;
     line-height: 1.3em;
+}
+
+#condor {
+    background-image: url(../images/condor.png);
+}
+
+#mate {
+    background-image: url(../images/matematcher.png);
 }
 
 #bamazon {
@@ -313,12 +312,19 @@ span {
 }
 
 footer {
-    left: 0;
-    right: 0;
     bottom: 0;
     background: #c7c7c7; 
-    height: 50px;
+    height: 60px;
     width: 100%;
+    padding-top: 25px;
+    margin-top: 30px;
+}
+
+#footer-link {
+    text-align: center;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 1.7em;
+    color: rgb(27, 27, 27);
 }
 
 .footertext {
@@ -330,6 +336,11 @@ footer {
     padding-top: 10px;
 }
 
+#excerpt {
+    justify-content: center;
+    margin: auto;
+}
+
 
 /*media queries portion*/
 
@@ -338,6 +349,29 @@ footer {
 }
 
 @media (max-width:768px) {
+        #hero-image {
+            height: 120vw;
+            width: 200%
+        }
+    
+    
+        .link-text {
+            display: none;
+        }
+    
+        #about-me {
+            margin-top: 260px;
+            font-size: 5.5vw;
+        }
+    
+        .projects, .paintings {
+            width: 300px;
+            height: 160px;
+        }
+    
+        #kloom {
+            max-width: 100%;
+        }
 
 }
 
@@ -365,34 +399,4 @@ footer {
     #kloom {
         max-width: 100%;
     }
-}
-
-@media (max-width:500px) {
-    h1, .links {
-        align-content: center;
-    }
-
-    #hero-image {
-        display: none;
-    }
-
-    .link-text {
-        display: none;
-    }
-
-    #top-main {
-        height: 140vw;
-        background: rgb(54, 54, 54);
-    }
-
-    #about-me {
-        margin-top: 220px;
-        font-size: 6vw;
-    }
-
-    .projects, .paintings {
-        width: 300px;
-        height: 160px;
-    }
-
 }

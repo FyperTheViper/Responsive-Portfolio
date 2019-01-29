@@ -13,33 +13,33 @@
 </head>
 <body>
 
-    <header id="header-top">
-        <div id="sticky-nav-inner">
-            <a href="#top-main" id="web-dev"><img src="assets/images/brettb.png" id="brett-face" alt="Brett Profile Drawing"></a>
-            <h1>Brett Byars</h1>
-            <div id="external-links">
-                <a href="https://www.linkedin.com/in/brett-byars-67806516a/" target="_blank">
-                    <img src="assets/images/linkedin.png" class="links" id="linkedin-link" alt="Linkedin">
-                </a>
-                <a href="https://github.com/FyperTheViper" target="_blank">
-                    <img src="assets/images/github.png" class="links" id="github-link" alt="Github">
-                </a>
-            </div>
-            <nav>
-                <a href="#web" class="link-text" id="web-dev">Web Portfolio</a>
-                <a href="#art" class="link-text">Artwork</a>
-                <a href="#book" class="link-text">Novel</a>
-                <a href="#me" class="link-text">About Me</a>
-            </nav>
-        </div>
-    </header>
 
     <section id="top-main">
         <img src="assets/images/ridge.jpg" id="hero-image" alt="">
-            <p id="about-me">
-                Coding | Painting | Writing<br>
-                Full Stack Web Developer + Graphic Design<br>
-                b.w.byars@gmail.com </p>
+            
+            <div id="about-me">
+                <img src="assets/images/brettb.png" id="brett-face" alt="Brett Profile Drawing"><br>
+                Brett Byars<br>
+                <div id="lower-text">
+                    Coding | Painting | Writing<br>
+                    Full Stack Web Developer + Graphic Design<br>
+                </div>
+                b.w.byars@gmail.com<br>
+                <div class="external-links">
+                        <a href="https://www.linkedin.com/in/brett-byars-67806516a/" target="_blank">
+                            <img src="assets/images/linkedin.png" class="links" id="linkedin-link" alt="Linkedin">
+                        </a>
+                        <a href="https://github.com/FyperTheViper" target="_blank">
+                            <img src="assets/images/github.png" class="links" id="github-link" alt="Github">
+                        </a>
+                </div>
+                <nav>
+                    <a href="#web" class="link-text" >Web Portfolio</a>
+                    <a href="#art" class="link-text">Artwork</a>
+                    <a href="#book" class="link-text">Novel</a>
+                    <a href="#me" class="link-text">About Me</a>
+                </nav>
+            </div>
     </section>
 
     <div id="web">
@@ -52,6 +52,14 @@
         </div>
         <section>
             <div id="projects-container">
+                <a href="https://github.com/akp28/Project2" target="_blank">
+                    <div class="projects" id="condor">
+                        <span>Project Condor</span>
+                    </div>
+                <a href="https://github.com/FyperTheViper/MateMatcher" target="_blank">
+                    <div class="projects" id="mate">
+                        <span>MateMatcher/ Express.JS Project</span>
+                    </div>
                 <a href="https://github.com/FyperTheViper/Bamazon" target="_blank">
                     <div class="projects" id="bamazon">
                         <span>Bamazon Node/MySQL Project</span>
@@ -137,8 +145,8 @@
             <div id="book-back">
                 <img src="assets/images/wallatthetide.png" id="kloom" alt="">
                 <div id="book-text">
-                    <h3>Wall at the Tide</h3><p>is sci-fi psychological thriller<p> currently being written by Brett Byars</p>
-                    <p>Read an excerpt here!</p>
+                    <h3>Wall at the Tide</h3><p>is sci-fi neo-noir thriller<p> currently being written by Brett Byars</p><br>
+                    <a href="excerpt.html" id="read-here" target="blank"><p>Read an excerpt here!</p></a>
                 </div>
             </div>
         </section>
@@ -165,8 +173,9 @@
         </section>
 
     <footer>
+        <a href="#top-main" id="footer-link"><p>Back to Top</p></a>
         <p class="footertext">
-            Copyright &copy; 2018 𐐒WB. All Right Reserved.
+            Copyright &copy; 2019 𐐒WB. All Right Reserved.
         </p>
     </footer>
     
