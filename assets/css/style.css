@@ -236,7 +236,7 @@ span {
 }
 
 #world {
-    background-image: url(../images/jupiter.png)
+    background-image: url(../images/jupiter.png);
 }
 
 #condor {
