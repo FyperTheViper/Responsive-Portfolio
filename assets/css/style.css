@@ -35,33 +35,11 @@ html {
     text-align: center;
     color: rgb(218, 218, 218);
     line-height: 1.5;
-    animation: move 1.5s;
-    -webkit-animation: move 1.5s;
 }
 
-@keyframes move {
-    from {
-      margin-left: 100%;
-      width: 300%; 
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
-              
-  @-webkit-keyframes move {
-    from {
-      margin-left: 100%;
-      width: 300%; 
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
+#email-link {
+    color: #9595cf
+}
 
 a {
     text-decoration: none;
@@ -111,7 +89,7 @@ h1 {
 .link-text {
     padding: 20px 15px 25px 15px;
     font-family: 'Fira Sans Condensed', sans-serif;
-    color: #dee0fc;
+    color: #f9faff;
     transition: all .2s ease-in-out;
 }
 
@@ -152,7 +130,7 @@ h2 {
     flex-flow: row wrap;
     justify-content: center;
     background-image: linear-gradient(to right, rgb(201, 201, 201), rgb(240, 240, 240), rgb(201, 201, 201));
-    max-width: 75%;
+    max-width: 80%;
     margin: auto;
     margin-top: 40px;
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.3), 0 8px 30px 0 rgba(0, 0, 0, 0.3);
@@ -166,8 +144,8 @@ h2 {
     align-items: flex-end;
     justify-content: flex-end;
     background: black;
-    width: 380px;
-    height: 210px;
+    width: 350px;
+    height: 200px;
     color: white;
     font-family: 'Georgia', Times, Times New Roman, serif;
     font-size: 1em;
@@ -235,7 +213,9 @@ span {
     max-width: 100%;
     background: rgb(43, 43, 43);
     margin: auto;
-    height: 60vh; 
+    height: 50vh; 
+    opacity: 0.5;
+    background-image: linear-gradient(to bottom, rgb(24, 36, 97), rgb(20, 20, 20));
 }
 
 #me-container {
@@ -248,11 +228,15 @@ span {
 
 #backstory {
     display: flex;
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
     margin-top: 60px;
     font-size: 1.2em;
     font-family: 'Didact Gothic', sans-serif;
     line-height: 1.3em;
+}
+
+#world {
+    background-image: url(../images/jupiter.png)
 }
 
 #condor {
@@ -368,11 +352,6 @@ footer {
             width: 300px;
             height: 160px;
         }
-    
-        #kloom {
-            max-width: 100%;
-        }
-
 }
 
 @media (max-width:640px) {
@@ -394,9 +373,5 @@ footer {
     .projects, .paintings {
         width: 300px;
         height: 160px;
-    }
-
-    #kloom {
-        max-width: 100%;
     }
 }
