@@ -167,11 +167,18 @@ h2 {
 }
 
 span {
-    background:rgba(37, 37, 37, 0.7);
+    background:rgba(31, 31, 31, 0.7);
     font-size: 1.3em;
     padding: 20px 15px 20px;
     color: rgb(231, 231, 231);
     border-radius: 20px 0px 0px;
+}
+
+#descript {
+    background:rgba(63, 63, 63, 0.7);
+    padding: 4px;
+    color: rgb(226, 226, 226);
+    border-radius: 0px 10px 0px;
 }
 
 #book-back {
