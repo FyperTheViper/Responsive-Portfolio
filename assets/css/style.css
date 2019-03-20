@@ -242,6 +242,10 @@ span {
     line-height: 1.3em;
 }
 
+#wine {
+    background-image: url(../images/winewiselogo.png);
+}
+
 #world {
     background-image: url(../images/jupiter.png);
 }
